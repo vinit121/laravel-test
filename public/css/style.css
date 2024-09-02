@@ -1,0 +1,127 @@
+#mrrChart {
+    height: 400px; /* Default height for larger screens */
+}
+
+@media (max-width: 768px) {
+    #mrrChart {
+        height: 300px; /* Adjust height for tablets */
+    }
+}
+
+@media (max-width: 480px) {
+    #mrrChart {
+        height: 250px; /* Adjust height for mobile */
+    }
+}
+
+/* Custom Tooltip Styles */
+#customTooltip {
+    width: 298px;                /* Set the width */
+    height: 286px;               /* Set the height */
+    border-radius: 4px 0px 0px 0px; /* Rounded corners */
+    z-index: 1000;
+    pointer-events: none; /* Prevent pointer events */
+    padding: 16px; /* Add padding for better spacing */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Soft shadow */
+    transition: opacity 0.2s ease;
+}
+
+
+#tooltipContent {
+    font-size: 0.875rem; /* Smaller font size for tooltip content */
+}
+
+
+/* Datepicker Input Styles */
+#datepicker {
+    background: none;
+    color: #ffffff; /* Text color */
+    border-radius: 0.375rem; /* Rounded corners */
+    transition: border-color 0.3s; /* Smooth transition */
+}
+
+
+.tooltip-label {
+    align-self: center;
+    font-family: 'Inter', sans-serif; /* Ensure to use the correct font family */
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 14.52px;
+    text-align: left;
+    color: #E0E1EC;
+    flex: 1;
+}
+
+.tooltip-value {
+    align-self: center;
+    font-size: 12px;
+    text-align: right;
+    flex: 1;
+    font-weight:600;
+    color: #E0E1EC;
+}
+
+.tooltip-header {
+    margin: 16px 0;
+    font-weight: 600;
+    font-size: 12px;
+    display: block;
+}
+
+.sidebar {
+    border-right: 1px solid #2C2D3C; /* Right border for sidebar */
+}
+
+.dropdown-menu {
+    display: none; /* Initially hide the dropdown menu */
+    background-color: #1f2937; /* Match sidebar color */
+    z-index: 10; /* Ensure dropdown is on top */
+}
+.dropdown-menu.show {
+    display: block;
+    padding-left: 15px; /* Show dropdown menu when active */
+}
+.search-container {
+    position: relative;
+    margin-bottom: 16px; /* Add margin for spacing */
+}
+.search-container input {
+    padding-left: 40px; /* Space for the search icon */
+}
+.search-icon {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: rgba(255, 255, 255, 0.5); /* Light color for the icon */
+}
+
+.active {
+    background-color: #4A5568; /* Change to your preferred active background color */
+    color: #FFFFFF; /* Change to your preferred active text color */
+}
+
+
+/* Add this to your CSS file */
+.profile-container {
+    display: flex;
+    justify-content: center; /* Center the image horizontally */
+    margin-top: 1rem; /* Add some space above the profile picture */
+}
+
+.profile-pic {
+    width: 25px; /* Set the width */
+    height: 25px; /* Set the height */
+    border-radius: 50%; /* Make it circular */
+    object-fit: cover; /* Ensure the image covers the circular area */
+}
+
+.dropdown-toggle.active {
+    background-color: #4A5568; /* Same background color as active menu items */
+    color: #FFFFFF; /* Same text color as active menu items */
+}
+
+#daysSelect {
+    background: none;
+}
